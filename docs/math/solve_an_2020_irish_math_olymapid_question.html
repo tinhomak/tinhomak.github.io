@@ -60,7 +60,18 @@ $$(\frac{a}{b+c} + \frac{b}{c+a}) ^ \frac{1}{7} + (\frac{b}{c+a} + \frac{c}{a+b}
     </p>
     <p>The number 7 in the question can be replaced by any positive number, as 1 to the power of any positive number is 1.</p>
     <p>Equality holds if and only if \(a=b=c\)</p>
-    
+    <hr/>
+    <h3>How people actually solve that in Olymapid</h3>
+    <p>Solving this problem with AM >= GM is too tedious. <a href="https://en.wikipedia.org/wiki/Titu%27s_lemma">Titu’s Lemma</a> or Nesbitt's inequality are used instead. 
+        <b>I know none of them.</b> It is an handicap for not knowing these inequality in entering an Olymapid contest.</p>
+    <p>
+        $$ \frac{a}{b+c} + \frac{b}{c+a} + \frac{c}{a+b} \geq \frac{3}{2} $$
+        $$ (\frac{a}{b+c} + \frac{b}{c+a}) + (\frac{c}{a+b} + \frac{c}{a+b}) + ( \frac{c}{a+b} + \frac{a}{b+c}) \geq 3 $$
+    </p>
+    <p>The problem becomes to prove that by <a href="https://en.wikipedia.org/wiki/Concave_function">concave function nature</a>:</p>
+        $$ \frac{ (\frac{a}{b+c} + \frac{b}{c+a}) ^ \frac{1}{7} + (\frac{b}{c+a} + \frac{c}{a+b}) ^ \frac{1}{7} + (\frac{c}{a+b} + \frac{a}{b+c}) ^ \frac{1}{7} }{3} $$
+        $$ \geq (\frac{(\frac{a}{b+c} + \frac{b}{c+a}) + (\frac{b}{c+a} + \frac{c}{a+b}) + (\frac{c}{a+b} + \frac{a}{b+c})}{3}) ^ \frac{1}{7} = 1 ^ \frac{1}{7} $$
+    <p></p>
     <hr/>
     <p><small>
         Powered by <a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll">GitHub Pages & MathJax</a> and
