@@ -1,3 +1,8 @@
+---
+layout: default
+title: Irish math olympiad year 2020 Q5
+---
+
 - Refer to [LaTex-like mathematical expression markdown syntax here](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 
 # The question
