@@ -18,9 +18,10 @@ $$(\frac{a}{b+c} + \frac{b}{c+a}) ^ \frac{1}{7} + (\frac{b}{c+a} + \frac{c}{a+b}
 
     <h1>Answer by AM-GM inequality</h1>
     <p>Divide both side by 3 and applying <a href="https://en.wikipedia.org/wiki/AM%E2%80%93GM_inequality">AM-GM inequality</a>, it is sufficient to prove that:</p>
-  $$((\frac{a}{b+c} + \frac{b}{c+a}) ^ \frac{1}{7}  (\frac{b}{c+a} + \frac{c}{a+b}) ^ \frac{1}{7}  (\frac{c}{a+b} + \frac{a}{b+c}) ^ \frac{1}{7}) ^ \frac{1}{3} \geq 1$$
-  $$(\frac{a}{b+c} + \frac{b}{c+a})  (\frac{b}{c+a} + \frac{c}{a+b}) (\frac{c}{a+b} + \frac{a}{b+c}) \geq (1 ^ 3) ^ 7 = 1$$
-
+    <p>
+        $$((\frac{a}{b+c} + \frac{b}{c+a}) ^ \frac{1}{7}  (\frac{b}{c+a} + \frac{c}{a+b}) ^ \frac{1}{7}  (\frac{c}{a+b} + \frac{a}{b+c}) ^ \frac{1}{7}) ^ \frac{1}{3} \geq 1$$
+        $$(\frac{a}{b+c} + \frac{b}{c+a})  (\frac{b}{c+a} + \frac{c}{a+b}) (\frac{c}{a+b} + \frac{a}{b+c}) \geq (1 ^ 3) ^ 7 = 1$$
+    </p>
     <h2>Tricky part \( \frac{a}{b+c} + \frac{b}{c+a} \)</h2>
     <p>Let u, v, w be \( a+b \), \( b+c \) and \( c+a \) respectively. They are all positive. That results in \( a=(u-v+w)/2 \), \( b=(v-w+u)/2 \), \( c=(w-u+v)/2 \).</p>
     <p>Formula (1) holds due to AM >= GM</p>
@@ -29,12 +30,20 @@ $$(\frac{a}{b+c} + \frac{b}{c+a}) ^ \frac{1}{7} + (\frac{b}{c+a} + \frac{c}{a+b}
     <p>$$\frac{1}{2} (\frac{u}{w} + \frac{u}{v}) \geq \frac{u}{\sqrt{vw}}$$</p>
     <p>Adding Formula (1) and (2) results is:</p>
     <p>
-    $$\frac{1}{2} (\frac{v+u}{w}) + \frac{1}{2} (\frac{w+u}{v}) \geq 1 + \frac{u}{\sqrt{vw}}$$
-    $$\frac{1}{2} (\frac{v+u}{w} -1) + \frac{1}{2} (\frac{w+u}{v} -1) = \frac{v+u-w}{w} + \frac{w+u-v}{v} \geq \frac{u}{\sqrt{vw}}$$
-    $$\frac{b}{w} + \frac{a}{v} \geq \frac{u}{\sqrt{vw}} = \frac{a+b}{\sqrt{(b+c)(c+a)}}$$
+        $$\frac{1}{2} (\frac{v+u}{w}) + \frac{1}{2} (\frac{w+u}{v}) \geq 1 + \frac{u}{\sqrt{vw}}$$
+        $$\frac{1}{2} (\frac{v+u}{w} -1) + \frac{1}{2} (\frac{w+u}{v} -1) = \frac{v+u-w}{2w} + \frac{w+u-v}{2v} \geq \frac{u}{\sqrt{vw}}$$
+        $$\frac{b}{w} + \frac{a}{v} \geq \frac{u}{\sqrt{vw}} = \frac{a+b}{\sqrt{(b+c)(c+a)}}$$
     </p>
-    <p>Similar cases to handle tricky part of $(b/w) + (c/u)$ and $(c/u) + (a/v)$</p>
-  
+    <p>Similar cases to handle tricky part of \( (b/w) + (c/u) \) and \( (c/u) + (a/v) \)</p>
+
+    <h2>Back to the question</h2>
+    <p>Return to the inequality to be proven:</p>
+    <p>$$(\frac{a}{b+c} + \frac{b}{c+a})  (\frac{b}{c+a} + \frac{c}{a+b}) (\frac{c}{a+b} + \frac{a}{b+c}) \geq 1$$</p>
+    <p>It is sufficient to prove that:</p>
+    <p>$$ (\frac{a+b}{\sqrt{(b+c)(c+a)}})  (\frac{b+c}{\sqrt{(c+a)(a+b)}})  (\frac{c+a}{\sqrt{(b+c)(a+b)}}) \geq 1 $$ </p>
+    <p>But it is equal now. The denominator is:</p>
+    <p>$$ \sqrt{(b+c)(c+a)} \sqrt{(c+a)(a+b)} \sqrt{(b+c)(a+b)} = (a+b)(b+c)(c+a) $$</p>
+    
     <hr/>
     <p><small><a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll">Powered by GitHub Pages & MathJax</a></small></p>
 
