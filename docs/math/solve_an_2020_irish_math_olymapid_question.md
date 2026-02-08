@@ -5,6 +5,9 @@ title: Irish math olympiad year 2020 Q5
 
 - Refer to [LaTex-like mathematical expression markdown syntax here](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 
+# Sample Test
+Inline math: \( \frac{1}{2} \)
+
 # The question
 - Read the question at [Irish math olympiad year 2020 Q5](https://maths.ucd.ie/~dukes/Irish_Maths_Olympiad_Compendium.pdf)
 - Given a, b, c > 0, Prove that
