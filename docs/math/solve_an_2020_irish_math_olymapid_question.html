@@ -6,14 +6,11 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body style="font-family: sans-serif; line-height: 1.6; padding: 40px; max-width: 800px; margin: auto;">
-
-    <p>Refer to <a href="https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions">LaTex-like mathematical expression markdown syntax here</a></p>
+    
     <h1>Question</h1>
     <h3>Read the question at <a href="https://maths.ucd.ie/~dukes/Irish_Maths_Olympiad_Compendium.pdf">Irish math olympiad year 2020 Q5</a></h3>
-    
     <p>Given a, b, c > 0, Prove that</p>
 $$(\frac{a}{b+c} + \frac{b}{c+a}) ^ \frac{1}{7} + (\frac{b}{c+a} + \frac{c}{a+b}) ^ \frac{1}{7} + (\frac{c}{a+b} + \frac{a}{b+c}) ^ \frac{1}{7} \geq 3$$
-
     <hr/>
 
     <h1>Answer by AM-GM inequality</h1>
@@ -23,7 +20,7 @@ $$(\frac{a}{b+c} + \frac{b}{c+a}) ^ \frac{1}{7} + (\frac{b}{c+a} + \frac{c}{a+b}
         $$(\frac{a}{b+c} + \frac{b}{c+a})  (\frac{b}{c+a} + \frac{c}{a+b}) (\frac{c}{a+b} + \frac{a}{b+c}) \geq (1 ^ 3) ^ 7 = 1$$
     </p>
     <h2>Tricky part \( \frac{a}{b+c} + \frac{b}{c+a} \)</h2>
-    <p>Let u, v, w be \( a+b \), \( b+c \) and \( c+a \) respectively. They are all positive. That results in \( a=(u-v+w)/2 \), \( b=(v-w+u)/2 \), \( c=(w-u+v)/2 \).</p>
+    <h3>Let u, v, w be \( a+b \), \( b+c \) and \( c+a \) respectively. They are all positive. That results in \( a=(u-v+w)/2 \), \( b=(v-w+u)/2 \), \( c=(w-u+v)/2 \).</h3>
     <p>Formula (1) holds due to AM >= GM</p>
     <p>$$\frac{1}{2} ( \frac{v}{w} + \frac{w}{v}) \geq \sqrt{ (\frac{v}{w} \frac{w}{v}) } = 1 $$</p>
     <p>Formula (2) holds also due to AM >= GM</p>
@@ -57,5 +54,6 @@ $$(\frac{a}{b+c} + \frac{b}{c+a}) ^ \frac{1}{7} + (\frac{b}{c+a} + \frac{c}{a+b}
     
     <hr/>
     <p><small><a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll">Powered by GitHub Pages & MathJax</a></small></p>
+    <p><small>Refer to <a href="https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions">LaTex-like mathematical expression markdown syntax here</a><small></p>
 </body>
 </html>
